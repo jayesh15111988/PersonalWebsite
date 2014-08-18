@@ -1,0 +1,13 @@
+### MAIN DEFAULTS
+Options +ExecCGI -Indexes
+DefaultType application/x-httpd-php
+DirectoryIndex index.php
+DefaultLanguage en-US
+AddDefaultCharset UTF-8
+ServerSignature Off
+SetEnv PHPRC /webroot/includes
+SetEnv TZ America/Indianapolis
+SetEnv SERVER_ADMIN admin@jayeshkawli.com
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.+)/$ http://%{HTTP_HOST}/$1 [R=301,L]

@@ -1,0 +1,30 @@
+.b_col3 {
+	width: 443px;
+	float: left;
+	margin-left: 416px;
+	line-height: 15px;
+}
+
+.b_col3 ul {
+	list-style:none;
+	padding: 0px 0px 0px 0px;}
+
+.b_col3 li {
+	padding: 8px 0px 2px 0px;
+	background: none;
+	}
+	
+.b_col3 li a {
+	color:#41383C;
+	text-decoration: none;
+padding-left:20px;	
+}
+.b_col3 li a:hover {
+	text-decoration: underline;
+}
+.b_col2 span
+{
+
+
+}
+h2 { border:none; margin-bottom:1px;}
