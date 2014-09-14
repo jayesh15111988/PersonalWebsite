@@ -154,7 +154,7 @@ List of Sources and Acknowledgements for the text and codes used to build Games 
                 
              
                 <div class="cleaner h20"></div>
-              <!--  <a href="http://www.copyright.gov" class="more float_r"></a>-->
+      
             </div>
 
 
@@ -202,9 +202,9 @@ List of Sources and Acknowledgements for the text and codes used to build Games 
 
 <div id="templatemo_footer_wrapper">
     <div id="templatemo_footer">
-        Copyright &copy;  2012 Jayesh Kawli | 
+        Copyright &copy;  2014 Jayesh Kawli | 
         <a href="acknowledgements.html" target="_parent">Acknowledgements</a> |  
-        <a href="copy.html" >Copyrights</a> | <a href="sitemap.php">Sitepmap</a>
+        <a href="copy.html" >Copyrights</a>
 <div style="text-align: center; font-size: 0.75em;">Design Downloaded from <a href="http://www.template4all.com/joomla/">free Joomla templates</a> | <a href="http://www.freethemes4all.com/">free website templates</a> | <a href="http://www.seodesign.us/" title="free psd files" target="_blank">Free PSD Files</a>.</div>
 
         <div class="cleaner"></div>
