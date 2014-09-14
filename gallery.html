@@ -3,61 +3,39 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Gallery - Main Page</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<meta name="keywords" content="Jayesh Kawli Official website homepage web developer Objective-C" />
+<meta name="description" content="This is Jayesh Kawli's Personal Website" />
+
+<link href="galleryStyles.css" rel="stylesheet" type="text/css" />
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/ddsmoothmenu.js">
-
-/***********************************************
-* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-
-</script>
+<script type="text/javascript" src="scripts/ddsmoothmenu.js"></script>
 
 <script type="text/javascript">
+
+$(document).ready(function() {
+  $().piroBox({
+      my_speed: 400, //animation speed
+      bg_alpha: 0.1, //background opacity
+      slideShow : false, // true == slideshow on, false == slideshow off
+      slideSpeed : 4, //slideshow duration in seconds(3 to 6 Recommended)
+      close_all : '.piro_close,.piro_overlay'// add class .piro_overlay(with comma)if you want overlay click close piroBox
+
+  });
+});
 
 ddsmoothmenu.init({
 	mainmenuid: "templatemo_menu", //menu DIV id
 	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
 	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
 	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })
 
-</script>
-<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
-		<script type="text/javascript" src="lib/jquery.tools.js"></script>	
-		<script type="text/javascript" src="lib/jquery.custom.js"></script>
-		
-		<!-- Pirobox setup and styles -->
-<script type="text/javascript" src="lib/pirobox.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-	$().piroBox({
-			my_speed: 400, //animation speed
-			bg_alpha: 0.1, //background opacity
-			slideShow : false, // true == slideshow on, false == slideshow off
-			slideSpeed : 4, //slideshow duration in seconds(3 to 6 Recommended)
-			close_all : '.piro_close,.piro_overlay'// add class .piro_overlay(with comma)if you want overlay click close piroBox
-
-	});
-});
-</script>
-
-<link href="images/style.css" rel="stylesheet" type="text/css" />
-
-
-<!-- Pirobox setup and styles end-->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
+var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-31656196-1']);
   _gaq.push(['_trackPageview']);
 
@@ -68,6 +46,13 @@ $(document).ready(function() {
   })();
 
 </script>
+<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.tools.js"></script>	
+		<script type="text/javascript" src="lib/jquery.custom.js"></script>
+		
+<script type="text/javascript" src="lib/pirobox.js"></script>
+
+
 </head>
 <body>
 
@@ -78,7 +63,7 @@ $(document).ready(function() {
 
 	<div id="templatemo_header">
     
-    	<div id="site_title"><h1><a href="index.php">Free CSS Templates</a></h1></div>
+    	<div id="site_title"><h1><a href="index.php"></a></h1></div>
         
         <div id="templatemo_menu" class="ddsmoothmenu">
         
@@ -196,9 +181,9 @@ $(document).ready(function() {
 </div>
 <div id="templatemo_footer_wrapper">
     <div id="templatemo_footer">
-        Copyright &copy;  2012 Jayesh Kawli | 
+        Copyright &copy;  2014 Jayesh Kawli | 
         <a href="acknowledgements.html" target="_parent">Acknowledgements</a> |  
-        <a href="copy.html" >Copyrights</a> | <a href="sitemap.php">Sitepmap</a>
+        <a href="copy.html" >Copyrights</a>
 <div style="text-align: center; font-size: 0.75em;">Design Downloaded from <a href="http://www.template4all.com/joomla/">free Joomla templates</a> | <a href="http://www.freethemes4all.com/">free website templates</a> | <a href="http://www.seodesign.us/" title="free psd files" target="_blank">Free PSD Files</a>.</div>
 
         <div class="cleaner"></div>
