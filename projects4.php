@@ -225,34 +225,7 @@ Game Files</a> (Some files Require Python and Pygame installed on your machine)<
                 
 </div>
 			</div> <!-- end of post -->
-			<div class="post_box">
-                <div class="post_header">
-                    <div class="post_date">
-                        Oct<span>2011</span>
-                    </div>
-                    <h2 id="bookstore">Online Book-store system</h2>
-                </div>
-                <div class="post_inner"> <a href="http://www.cs.indiana.edu/cgi-pub/jkawli/bookstore/frontpage.php"><img src="images/bookstore.jpg"  alt="Image" /></a>
-                    
-                    <p>The online book store system, similar to a real world book store, is offered virtually. The customer can browse, search and shop for books in the comfort 
-of his/her own home.
-It is a convenient, time saving and fuel-efficient way to get the books that a customer wants from anywhere in the world.</p>
-					<ul class="tmo_list">
-					<li><a href="http://www.cs.indiana.edu/cgi-pub/jkawli/bookstore/frontpage.php">Website</a></li>
-					<li><a href="docs/Finals_ADC_presentation.pdf">Design Document and presentation</a></li>
-                	<li><a href="docs/Advanced Database Management System.pdf">Project Report</a></li>
-                    
- <div class="cleaner h20"></div>
-                         
-			  
-                </ul>
-					</div>
-			</div> <!-- end of post -->
-			    
-                        
-                                  
-                       
-
+			
                 <div class="cleaner h20"></div>    
           		<div class="templatemo_paging">
                     <ul>
