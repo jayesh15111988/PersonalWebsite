@@ -213,14 +213,14 @@ ddsmoothmenu.init({
                 Nationwide Children's Online appointment Application - (ASP.Net, SQL Server 2008 and C#)</div>
 				
 
-  <div class="col_allw300 fp_lp"> <a href="http://www.cs.indiana.edu/cgi-pub/jkawli/jayeshkawli/canvas/gameparticle.html"><img src="images/game1.jpg" 
+  <div class="col_allw300 fp_lp"> <a href="http://www.jayeshkawli.com/jayeshkawli/canvas/GrowUp/GrowUp.html"><img src="images/game1.jpg" 
     alt="image" height="150" width="300"  /></a>
                 Grow up!! (Canvas and Javascript)</div>
       
-      <div class="col_allw300 fp_lp"> <a href="http://www.cs.indiana.edu/cgi-pub/jkawli/jayeshkawli/canvas/gameparticlenew.html"><img src="images/game2.jpg" 
+      <div class="col_allw300 fp_lp"> <a href="http://www.jayeshkawli.com/jayeshkawli/canvas/ExpandMe/expandMe.html"><img src="images/game2.jpg" 
         height="150" width="300" alt="image" /></a>
                Power Sucker (Canvas and Javascript)</div>
- <div class="col_allw300 fp_lp col_rm"> <a href="projects5.php#can"><img src="images/paintApp.jpg" height="150" width="300" alt="image" /></a>
+ <div class="col_allw300 fp_lp col_rm"> <a href="projects5.php#can"><img src="images/paintAppSmall.jpg" height="150" width="300" alt="image" /></a>
                 Paint Application-  (HTML5, Javascript, KineticJS, CSS3, Canvas)</div>
 				
             <div class="cleaner h20"></div>
