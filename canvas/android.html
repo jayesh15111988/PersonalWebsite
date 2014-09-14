@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSSDesk</title>
+    <style type="text/css">
+      
+      body { background-color: #2574b0; }
+      
+      body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 10px;
+  font-size: 13px;
+   background-color:#434444;
+}
+#main{
+  margin-left:200px;
+  margin-top:200px;
+ z-index:2px;
+ position:absolute;
+ background-color:#434454;
+}
+
+#mainBody{
+  
+  height:140px;
+  width:150px;
+  position:absolute;
+border-radius: 0px 0px 15px 15px;
+}
+
+
+div{
+  background-color:#a4c639;
+}
+.head{
+ position:absolute;
+ height:68px;
+ width:150px;
+ margin-top:-75px;
+ border-radius: 120px 120px 0 0;
+ -moz-border-radius: 120px 120px 0 0;
+ -webkit-border-radius: 90px 90px 0 0;
+
+}
+.eyes{
+  position:absolute;
+width: 10px;
+    height: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px; 
+ background:white;
+}
+#le{
+ margin-left:35px;
+ margin-top:20px;
+ 
+}
+.eyes:hover
+{
+ background-color:black; 
+}
+
+.antenna{
+   height:8px;
+  width:50px;
+  position:absolute;
+border-radius:15px;
+position:absolute;
+margin-top:-10px;
+}
+div#lh:hover  {
+  //background-color:white;
+
+-webkit-animation-name:             rotateleft; 
+    -webkit-animation-duration:         20s; 
+  
+    -webkit-transition-timing-function: linear;
+}
+
+div.head:hover  {
+  //background-color:white;
+  margin-left:-15px;
+  margin-top:-100px;
+ transform-origin: 0% 100%;
+-webkit-animation-name:             rotatehead; 
+    -webkit-animation-duration:         20s; 
+  
+    -webkit-transition-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotatehead {
+  from {
+    -webkit-transform: rotate(-20deg);
+  }
+  to { 
+    -webkit-transform: rotate(-20deg);
+  }
+}
+
+div#rh:hover  {
+  //background-color:white;
+-webkit-animation-name:             rotateright; 
+    -webkit-animation-duration:         20s; 
+  
+   -webkit-ANIMATION-timing-function: linear;
+}
+
+@-webkit-keyframes rotateleft {
+  from {
+    -webkit-transform: rotate(30deg);
+  }
+  to { 
+    -webkit-transform: rotate(30deg);
+  }
+}
+
+@-webkit-keyframes rotateright {
+  from {
+    -webkit-transform: rotate(-30deg);
+  }
+  to {
+    -webkit-transform: rotate(-30deg);
+  }
+}
+
+
+#ra{
+  
+ -moz-transform: rotate(55deg);  
+     -o-transform: rotate(55deg);  
+-webkit-transform: rotate(55deg);  
+    -ms-transform: rotate(55deg);  
+        transform: rotate(55deg);  
+        
+             zoom: 1;  
+}
+
+#la{
+  margin-left:100px;
+ -moz-transform: rotate(-55deg);  
+     -o-transform: rotate(-55deg);  
+-webkit-transform: rotate(-55deg);  
+    -ms-transform: rotate(-55deg);  
+        transform: rotate(-55deg);  
+          
+             zoom: 1;
+
+}
+
+#re{
+  margin-left:110px;
+ margin-top:20px;
+}
+div.legs {
+  height:95px;
+  width:40px;
+border-radius:0px 0px 20px 20px;
+position:absolute;
+z-index:-1;
+margin-top:110px;
+margin-left:20px;
+ 
+}
+.hands{
+   height:110px;
+  width:35px;
+margin-top:0px;
+margin-left:50px;
+border-radius:25px;
+}
+#lh{
+  position:absolute;
+margin-left:-45px;
+}
+#rh{
+   position:absolute;
+margin-left:160px;
+}
+
+#rl{
+  margin-left:85px;
+    </style>
+  </head>
+  <body>
+    <div id='main'>
+<div id='lh' class='hands'></div>
+<div id='rh' class='hands'></div>
+<div id='mainBody'></div>
+<div class='head'>
+<div id='le' class='eyes'></div>
+<div id='re' class='eyes'></div>
+<div id='la' class='antenna'></div>
+<div id='ra' class='antenna'></div>
+</div>
+<div id='ll' class='legs'></div>
+<div id='rl' class='legs'></div>
+
+</div>
+  </body>
+</html>

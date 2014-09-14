@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<script type="text/javascript">
+		window.onload=function(){
+			var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+	canvas.width = w;
+	canvas.height = h;
+	var length,width,divergence,reduction;
+			var start_points=[];
+			function init()
+			{
+			//	ctx.fillStyle="black";
+			//	ctx.fillRect(0,0,w,h);
+				length=200;
+				width=30;
+				divergence=Math.PI/4;
+				reduction=0.6;
+				ctx.beginPath();
+				
+				var pttemp={
+					x:w/2,
+                    y:length+50,
+					angle:Math.PI/2
+				}
+				start_points.push(pttemp);
+				ctx.moveTo(pttemp.x,h-50);
+				ctx.lineTo(pttemp.x,h-pttemp.y);
+				ctx.strokeStyle="green";
+				ctx.lineWidth=width;
+				ctx.stroke();
+				branches();
+			}
+			
+			function branches()
+			{
+				//alert("2");
+				var nsp=[];
+				//alert(reduction);
+				width=width*reduction;
+				length=length*reduction;
+				ctx.lineWidth=width;
+				//alert("reduction");
+				for(var i=0;i<start_points.length;i++)
+				{
+					
+					var point=start_points[i];
+					var pt1=getPoint(point.x,point.y,point.angle+divergence,length);
+					var pt2=getPoint(point.x,point.y,point.angle-divergence,length);
+					
+					ctx.moveTo(point.x,h-point.y);
+					ctx.lineTo(pt1.x,h-pt1.y);
+					ctx.moveTo(point.x,h-point.y);
+					ctx.lineTo(pt2.x,h-pt2.y);
+				ctx.stroke();
+				
+				pt1.angle=point.angle+divergence;
+				pt2.angle=point.angle-divergence;
+				nsp.push(pt1);
+				nsp.push(pt2);
+				
+				}
+				start_points=nsp;
+				if(length>0.5)
+				{
+					setTimeout(branches,500);
+				}
+			}
+			
+			function getPoint(x,y,angle,length)
+			{
+				var finx=x+ Math.cos(angle)*length;
+				var finy=y+Math.sin(angle)*length;
+				return {x:finx,y:finy};
+			}
+			
+			init();
+		}
+		
+		</script>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="jayeshkawli">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<style type="text/css">
+	
+	#canvas{
+		background-image: linear-gradient(bottom, #FFD51A 50%, #FAC815 50%);
+background-image: -o-linear-gradient(bottom, #FFD51A 50%, #FAC815 50%);
+background-image: -moz-linear-gradient(bottom, #FFD51A 50%, #FAC815 50%);
+background-image: -webkit-linear-gradient(bottom, black 50%, lightblue 50%);
+background-image: -ms-linear-gradient(bottom, #FFD51A 50%, #FAC815 50%);
+		
+		
+	}
+	
+	</style>
+	</head>
+
+	<body>
+		<div class="bst">
+		<canvas id="canvas">
+			
+			</canvas>
+	</div>
+		<div>
+			
+		</div>
+	</body>
+</html>

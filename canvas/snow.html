@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+<style type="text/css">
+body{
+	background:#ef0093;
+}
+
+#canvas{
+	background-color:black;
+display:block;
+}
+
+</style>
+<script type="text/javascript">
+window.onload=function()
+{
+	
+	var can=document.getElementById("canvas");
+	var ctx=can.getContext("2d");
+	var w=window.innerWidth;
+	var h=window.innerHeight;
+	can.width=w;
+	can.height=h;
+	var mp = 60;
+	var den=8;
+	var angle=0; 
+	var radius=3;
+	var particles = [];
+	for(var i=0;i<mp;i++)
+	{
+		
+		particles.push(
+			{
+				x:Math.random()*w,
+				y:Math.random()*h,
+				r:Math.random()*radius,	d:(Math.random()*den)
+			}
+		)	
+	}
+	
+	
+	function draw(){
+		ctx.fillStyle="rgb(0,0,0)";
+		ctx.fillRect(0,0,w,h);
+		
+		ctx.fillStyle="rgba(255,255,255,1)";
+		ctx.beginPath();
+		
+		for(var i=0;i<particles.length;i++)
+		{
+			var p=particles[i];
+			ctx.moveTo(p.x,p.y);
+			ctx.arc(p.x,p.y,p.r,0,2*Math.PI,true);
+			
+		}
+		ctx.fill();
+		
+		update();
+	}
+	function update()
+	{
+		angle+=0.005;
+	for(var i = 0; i < particles.length; i++)
+		{
+			var p = particles[i];
+			
+			p.x += Math.sin(angle) * 2;
+			
+			p.y += Math.cos(angle+p.d) + 1+(p.r/2);
+		if(p.x<0 || p.x >w){
+			p.x=-10;
+		}
+		if(p.y >h){
+			p.y=-10;
+			p.x=Math.random()*w;
+		}
+		
+		}
+		
+	}
+	
+	setInterval(draw,3);
+	
+	
+}
+
+
+</script>
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="jayeshkawli">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body style="background-color:#ff0">
+		<canvas id="canvas">
+			
+			</canvas>
+		
+	</body>
+</html>

@@ -1,0 +1,149 @@
+body {
+    background-color: #2574b0;
+    font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #434444;
+}
+ #main {
+    margin-left: 40%;
+    margin-top: 15%;
+    z-index: 2px;
+    position: absolute;
+    background-color: #434454;
+}
+#mainBody {
+    height: 140px;
+    width: 150px;
+    position: absolute;
+    border-radius: 0px 0px 15px 15px;
+}
+div {
+    /* Android specific green color */
+ background-color: #a4c639;
+}
+.head {
+    position: absolute;
+    height: 68px;
+    width: 150px;
+    
+    margin-top: -75px;
+    border-radius: 120px 120px 0 0;
+    
+    -moz-border-radius: 120px 120px 0 0;
+    -webkit-border-radius: 90px 90px 0 0;
+}
+.eyes {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+}
+#leftEye {
+    margin-left: 35px;
+    margin-top: 20px;
+}
+#rightEye {
+    margin-left: 110px;
+    margin-top: 20px;
+}
+.eyes:hover {
+    background-color: black;
+}
+.antenna {
+    height: 8px;
+    width: 50px;
+    
+    position: absolute;
+
+    border-radius: 15px;
+    margin-top: -10px;
+}
+.hands:hover {
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+}
+#leftHand:hover {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+#rightHand:hover {
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+.antenna {
+    zoom: 1;
+}
+#rightAntenna {
+    -moz-transform: rotate(55deg);
+    -o-transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+    -ms-transform: rotate(55deg);
+    transform: rotate(55deg);
+}
+#leftAntenna {
+    margin-left: 100px;
+    
+    -moz-transform: rotate(-55deg);
+    -o-transform: rotate(-55deg);
+    -webkit-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+}
+.legs {
+    height: 95px;
+    width: 40px;
+    border-radius: 0px 0px 20px 20px;
+    
+    position: absolute;
+    
+    z-index: -1;
+    
+    margin-top: 110px;
+    margin-left: 20px;
+}
+.hands {
+    height: 110px;
+    width: 35px;
+    margin-top: 0px;
+    margin-left: 50px;
+    border-radius: 25px;
+}
+#leftHand {
+    position: absolute;
+    margin-left: -45px;
+}
+#rightHand {
+    position: absolute;
+    margin-left: 160px;
+}
+#rightLeg {
+    margin-left: 85px;
+}
+div.head:hover {
+    margin-left: 0px;
+    margin-top: -80px;
+
+    transform-origin: 0% 100%;
+    
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    
+    transition-duration: 0.2s;
+    
+    -webkit-transition-timing-function: linear;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+}

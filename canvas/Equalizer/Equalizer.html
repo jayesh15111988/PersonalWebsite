@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" defer></script>
+
+    <script src="EqualizerSound.js" defer></script>
+    <script src="EqualizerCanvasLogic.js" defer></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="EqualizerStyle.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Music Equalizer Using Canvas APIs</title>
+    <meta name="author" content="Jayesh Kawli" />
+    <!-- Date: 2013-11-15 -->
+
+</head>
+
+<body>
+
+
+    <div>
+        <canvas id="equalizerCanvas" width="1366" height="400">
+
+        </canvas>
+    </div>
+
+    <table>
+        <tr>
+            <td colspan='2'>
+                <button id='startShow'>Press to Start / Update the Visualizer</button>
+                <button id='pause'>Pause</button>
+                <br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Max Height:</td>
+            <td>
+                <input type="text" id="height" value="200">
+            </td>
+        </tr>
+        <tr>
+            <td>Number of Bars</td>
+            <td>
+                <input type="text" id="numbers" value="20">
+            </td>
+        </tr>
+        <tr>
+            <td>Width of bar</td>
+            <td>
+                <input type="text" id="width" value="15">
+            </td>
+        </tr>
+        <tr>
+            <td>Frame Rate</td>
+            <td>
+                <input type="text" id="frameRate" value="12">
+            </td>
+        </tr>
+        <tr>
+            <td>Visualizer Width</td>
+            <td>
+                <input type="text" id="areaWidth" value="600">
+            </td>
+        </tr>
+        <tr>
+            <td>Sound Effect</td>
+            <td>
+                <button id='soundEffect'>Press to Start / Stop Background sound</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Sound File Name (.wav)</td>
+            <td>
+                <input type='text' value='glass_shatter_c.wav' id='inputSoundFile' />e.g. Music_Instrument.wav
+            </td>
+        </tr>
+    </table>
+    <div>Please press Start / Update the Visualizer button each time you change the name of audio file</div>
+    <br/>
+</body>
+
+</html>

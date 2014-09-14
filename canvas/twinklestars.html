@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>
+		
+			$(document).ready(function() {
+				var can = document.getElementById("mycan");
+				if (can.width < window.innerWidth) {can.width = window.innerWidth;
+				
+				}
+				if (can.height < window.innerHeight) {
+					can.height = window.innerHeight;
+				}
+
+				var ctx = can.getContext("2d");
+				
+				var x=100,y=100;
+			function draw()
+				{
+				ctx.globalCompositeOperation="source-over";
+					ctx.fillStyle="rgba(0,0,0,0.3)";
+				ctx.fillRect(0,0,can.width,can.height);
+ctx.globalCompositeOperation="lighter";
+
+ctx.fillStyle = 'white';
+
+ctx.save();
+ctx.beginPath();
+ctx.arc(can.width-70, 40, 30, 0, 2 * Math.PI);
+ctx.clip();
+ctx.fillRect(can.width-100, 10, 60, 60);
+ctx.restore();
+
+
+
+				for(var i=0;i<particle.length;i++)
+{
+	var part=particle[i];
+				ctx.beginPath();
+				var grad=ctx.createRadialGradient(part.x,part.y,0,part.x,part.y,20);
+				
+				grad.addColorStop(0,"white");
+				grad.addColorStop(1,part.color);
+				
+				ctx.fillStyle=grad;
+				ctx.arc(part.x,part.y,part.radius,0,2*Math.PI,false);
+				ctx.closePath();
+				ctx.fill();
+				
+    part.radius+=Math.random(20);
+    if(part.radius>Math.random(25,30)){
+    part.radius=Math.random(20,25);
+    }
+			
+				
+				
+}				
+}
+function ranpoint()
+{
+	this.x=Math.random()*can.width;
+	this.y=Math.random()*can.height;
+
+var r=Math.random()*255>>0;
+var g=Math.random()*255>>0;
+var b=Math.random()*255>>0;
+
+this.color="rgba(22,34,211,1)";//"rgba("+r+","+g+","+b+",0.5)";
+this.radius=Math.random()*20+20;
+
+}
+
+var particle=[];
+for(var i=0;i<200;i++)
+{
+	
+	particle.push(new ranpoint());
+	
+}
+			setInterval(draw,33);
+
+})
+	//var imaged=ctx.getImageDate(800,800,400,400);		
+		
+		
+		
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>HTML</title>
+		<meta name="author" content="jayeshkawli" />
+		<!-- Date: 2013-11-15 -->
+	</head>
+	<body>
+		
+		
+		
+		
+		
+        <div>
+		<canvas id="mycan" style="margin-left:auto;margin-right:auto;" width="800" height="400">
+            
+		</canvas>
+        </div>
+       
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
+

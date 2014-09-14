@@ -143,24 +143,18 @@ ddsmoothmenu.init({
                     <div class="post_date">
                         Jun <span>2013</span>
                     </div>
-                    <h2 id="nrmp">National Resident Matching Program Algorithm</h2>
+                    <h2 id="afnetworking">Simple Networking plugin for iOS API communication</h2>
 					
                 </div>
 				 
-                <div class="post_inner"> <img src="images/resident.jpg"  alt="nrmp" />
-               <br/><a href='http://www.nrmp.org/res_match/about_res/algorithms.html'>http://www.nrmp.org/res_match/about_res/algorithms.html</a><br/><br/>
-                    <p>"The NRMP algorithm uses the preferences expressed in the rank order lists submitted by applicants and programs to place individuals into positions. The process begins with an attempt to place an applicant into the program indicated as most preferred on that applicant's list. If the applicant cannot be matched to this first choice program, an attempt is then made to place the applicant into the second choice program, and so on, until the applicant obtains a tentative match, or all the applicant's choices have been exhausted." [http://www.nrmp.org/res_match/about_res/algorithms.html]</p>
+                <div class="post_inner"> <img src="images/afnetworking.jpg"  alt="afnetworking" />
+               <br/><a href='https://github.com/jayesh15111988/JKEasyAFNetworking'>Source to GitHub Repo</a><br/><br/>
+                    <p>This is the library to simplify usage of AFNetworking communication for new developers. It provides simple block based api to communicate with server.
+                        It offers 4 majot API methods. It is flexible and simple to use. For more information you can visit the GitHub link mentioned above</p>
 
-					<br/><b>Additional Resources</b></p>
+					<br/>
 					
-					<ul class="tmo_list">
 					
-
-
-<li><a href="docs/matcher.zip">Source Code and Dependencies (NRMP implementation and test files)</a></li>
-<li><a href="docs/instructions.txt">How to run a program</a></li>
-<li><a href="docs/nrmp_report.pdf">Project Report (Under construction)</a></li>
-</ul>
 
 
                 						 <div class="cleaner h20"></div>

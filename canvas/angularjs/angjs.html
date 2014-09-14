@@ -1,0 +1,112 @@
+<html ng-app='myApp'>
+<head>
+	<title>AngJS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+<script>
+
+var myAppModule=angular.module('myApp',[]);
+
+var controllers={};
+controllers.textController=function($scope){
+	var myText={};
+	myText.message="This is awesome";
+	$scope.myText=myText;
+}
+controllers.HelloController=function($scope){
+	$scope.greeting={text:"this is jus begin"};
+}
+controllers.businessDecision=function($scope){
+	var opinion="start now";
+	//console.log("$scope.budget");
+$scope.initialValue={value:0};
+$scope.budget=$scope.initialValue.value;
+	
+$scope.goUpdate=function(){
+
+
+
+	if($scope.budget>50)
+		opinion="bad";
+	else if($scope.budget>20)
+		opinion="bad1";
+	else if($scope.budget>10)
+		opinion="bad2";
+	else
+		opinion="bad3";
+$scope.opinion=$scope.budget*10;
+}
+$scope.$watch('budget',$scope.goUpdate);
+	
+}
+
+
+myAppModule.controller(controllers);
+
+
+
+function ShoppingCart($scope){
+$scope.items=[{name:'sanam',city:'chicago',quantity:500},{name:'jena',city:'nalaso',quantity:50},{name:'mahesh',city:'calif',quantity:100},{name:'madhuri',city:'raut',quantity:200}];
+
+$scope.addItem=function(){
+	console.log($scope.name);
+	console.log($scope.city);
+	$scope.items.push({name:$scope.name,city:$scope.city});
+}
+
+$scope.removeItem=function(index){
+	$scope.items.splice(index,1);
+}
+
+}
+
+
+
+
+</script>
+</head>
+
+<body>
+
+<div ng-controller='HelloController'>
+
+<p>{{greeting.text}}, World!!</p>
+</div>
+
+<div ng-controller='HelloController'>
+<input type='text' ng-model='greeting.text'>
+<p>{{greeting.text}}, World!!</p>
+</div>
+
+<input type='text' ng-model='name'>
+<p>{{name}}, World!!</p>
+
+<div ng-controller='ShoppingCart'>
+<div ng-repeat='item in items'>
+<span>{{item.name}} - {{item.city}}<button ng-click="removeItem($index)">Click to remove</button>
+<input type="text" ng-model='item.quantity'>
+{{item.quantity*100|currency}}
+</span>
+
+</div>
+<input type="text" ng-model='name'>
+<input type="text" ng-model='city'>
+<button ng-click="addItem()">Click to Add</button>
+
+
+<div ng-controller='textController'>
+{{myText.message}}
+</div>
+
+<div ng-controller='HelloController'>
+<p>{{greeting.text}}</p>
+<div ng-controller='businessDecision'>
+<input type='text' ng-model='budget'>
+<div ng-bind='opinion'></div>
+	</div>
+
+</div>
+
+
+	</body>
+
+</html>

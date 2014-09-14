@@ -1,52 +1,19 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Jayesh Kawli's Home</title>
-<meta name="keywords" content="" />
+
+<meta name="keywords" content="Jayesh Kawli Official website homepage web developer Objective-C" />
+<meta name="description" content="This is Jayesh Kawli's Personal Website" />
+
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-
-	<script type="text/javascript" src="scripts/swfobject/swfobject.js"></script>
-   
-
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
+<script type="text/javascript" src="scripts/swfobject/swfobject.js"></script>
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/ddsmoothmenu.js">
+<script type="text/javascript" src="scripts/ddsmoothmenu.js"></script>
 
-/***********************************************
-* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-
-</script>
-
-<script type="text/javascript">
-
-ddsmoothmenu.init({
-	mainmenuid: "templatemo_menu", //menu DIV id
-	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
-	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
-})
-
-</script>
-
-</head>
-<body>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Jayesh Kawli's Home</title>
-<meta name="keywords" content="" />
-<meta name="description" content="This is Jayesh Kawli's personal website" />
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-
-	<script type="text/javascript" src="scripts/swfobject/swfobject.js"></script>
     <script type="text/javascript">
       var flashvars = {};
       flashvars.cssSource = "css/piecemaker.css";
@@ -63,36 +30,20 @@ ddsmoothmenu.init({
 	  
       swfobject.embedSWF('piecemaker.swf', 'piecemaker', '960', '500', '10', null, flashvars,    
       params, null);
-    
-    </script>
 
-<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
-<script type="text/javascript" src="scripts/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/ddsmoothmenu.js">
-
-/***********************************************
-* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-
-</script>
-
-<script type="text/javascript">
 
 ddsmoothmenu.init({
-	mainmenuid: "templatemo_menu", //menu DIV id
-	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
-	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+  mainmenuid: "templatemo_menu", //menu DIV id
+  orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+  classname: 'ddsmoothmenu', //class added to menu's outer DIV
+  contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })
 
-</script>
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
+// Script for Google Analytics tracking 
+
+ var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-31656196-1']);
   _gaq.push(['_trackPageview']);
 
@@ -102,15 +53,19 @@ ddsmoothmenu.init({
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+
+
 </script>
+
 </head>
+
 <body>
 
 <div id="templatemo_wrapper">
 
 	<div id="templatemo_header">
     
-    	<div id="site_title"><h1><a href="index.php">Free CSS Templates</a></h1></div>
+    	<div id="site_title"><h1><a href="index.php">Jayesh Kawli's Home Page</a></h1></div>
         
         <div id="templatemo_menu" class="ddsmoothmenu">
         
@@ -140,7 +95,7 @@ ddsmoothmenu.init({
                         <li><a href="platforms.html">Platforms</a></li>
                         <li><a href="databases.html">Databases</a></li>
                         <li><a href="projects.php">Projects</a></li>
-			<li><a href="miscellaneous.html">Miscellaneous</a></li>
+			                  <li><a href="miscellaneous.html">Miscellaneous</a></li>
 						
 					</ul>
                 </li>
@@ -173,20 +128,22 @@ ddsmoothmenu.init({
         	<div class="col_w460 float_l">
             	<h2>About Me</h2>
                 <img src="images/rr.jpg" alt="image 01" class="float_l" />
-                <!--<img src="images/rg.jpg" alt="image 02" class="float_r" />-->
+                
                 <div class="cleaner h20"></div>
                 <p><em>
 				My icons! True Legends! <br/>  </em></p>
 <!--These are the people I get inspiration and motivation from.  </em></p>-->
                 <p>Hello, I am Jayesh Kawli. Welcome to my home page. You can know lot of things about me on this website.
-				I am graduate student at Indiana University Bloomington. I am studying Computer Science. My interests are Artificial intelligence, Databases and Systems</p>
+				I am a Web and Mobile developer at Columbus based startup DuetHealth Inc. I am currently working as an iOS developer looking to make transition to swift very soon.
+          I have completed my graduation at Indiana University in Computer Science. My interests are Artificial intelligence, Databases and System level programming</p>
 				<p>
 				 You will know lot of things about me like,on this website.
 				</p>
                 <ul class="tmo_list">
                 	<li>Education History</li>
                     <li>Job History</li>
-                    <li>Skills and Interests</li>
+                    <li> Developer Skillset</li>
+                    <li>Technical Interests</li>
  <div class="cleaner h20"></div>
                 <a href="projects.php" class="more float_r"></a>               
 			   <ul>&nbsp;</ul>
@@ -194,9 +151,7 @@ ddsmoothmenu.init({
 					<ul>&nbsp;</ul>
 					<ul>&nbsp;</ul>
 					
-				<!--	<ul>&nbsp;</ul>
-					<ul>&nbsp;</ul>
-					<ul>&nbsp;</ul> -->
+			
                 </ul>
                
             </div><div></div>
@@ -206,8 +161,8 @@ ddsmoothmenu.init({
                 	<div class="fp_service_box fp_c1">
                         <img src="images/1_64x64.png" alt="Image 1" />
 						<p><a href="#"> Email </a>
-						My Email id is jkawli@indiana.edu. You can also contact me on my alternate id j.kawli@rediffmail.com</p>
-                        <p><a href="mailto:jkawli@indiana.edu">Click here to send me an email</a> I am welcome to your questions, comments and suggestions </p>
+						My Email id is j.kawli@gmail.com. You can also contact me on my alternate id jayesh.kawli@duethealth.com</p>
+                        <p><a href="mailto:j.kawli@gmail.com">Click here to send me an email</a> I am welcome to your questions, comments and suggestions </p>
 						</div>
                 </div>
                 <div class="col_w460">
@@ -234,14 +189,13 @@ ddsmoothmenu.init({
 				</div>
             </div>
 			<br/><br/>
-            <div class="cleaner"></div>
+            
 		</div>
         <div class="col_fw_last">
-		<br><br>
-				<!--	<ul>&nbsp;</ul>
-					<ul>&nbsp;</ul>
-					<ul>&nbsp;</ul>      -->
-        	<h2><div padding-left:100px>Coolest Projects</div></h2>
+		<div class="cleaner"></div>
+    <div class="cleaner"></div>
+				
+        	<h2>Coolest Projects</h2>
 			<br/><br/>
             <div class="col_allw300 fp_lp"> <a href="projects3.php#geo"><img src="images/geoloc.jpg" alt="image" /></a>
                 Geo Location Detection from Object shadows</div>
@@ -250,8 +204,8 @@ ddsmoothmenu.init({
             <div class="col_allw300 fp_lp col_rm"> <a href="projects4.php#pygame"><img src="images/pygame1.jpg" alt="image" /></a>
               Games developed using Python Pygame library</div>
 			  <!--Image credits http://img3.allvoices.com/thumbs/image/609/480/57602990-nrmp.jpg --><br/><br/>
-			  <div class="col_allw300 fp_lp"> <a href="projects4.php#nrmp"><img src="images/nrmp.jpg" alt="image" height="150" width="300"  /></a>
-                National Resident matching program algorithm Implementation (Java)</div>
+			  <div class="col_allw300 fp_lp"> <a href="projects4.php#afnetworking"><img src="images/networking.jpg" alt="image" height="150" width="300"  /></a>
+                Easy AFNetworking plugin for iOS</div>
 			
 			<div class="col_allw300 fp_lp"> <a href="projects5.php#can"><img src="images/ss.jpg" height="150" width="300" alt="image" /></a>
                Experiments with Canvas and HTML5</div>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+			<script type="text/javascript">
+		window.onload=function(){
+			var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+	var snd;
+	canvas.width = w;
+	
+	canvas.height = h;
+	
+	function box(x,y){
+		
+		this.x=x;
+		this.y=y;
+		this.width=20;
+		this.height=20;
+		this.velx=Math.random()*30;
+		this.vely=1+Math.random()*10;
+		this.r = Math.round(Math.random()*255);
+				this.g = Math.round(Math.random()*255);
+				this.b = Math.round(Math.random()*255);
+		this.draw=function(){
+		
+snd = new Audio("door_creak.wav"); 			
+				
+				this.rgba = "rgba("+this.r+","+this.g+","+this.b+",0.6)";
+		
+		ctx.strokeStyle=this.rgba;
+		ctx.strokeRect(this.x,this.y,this.width,this.height);
+		
+			this.update();
+		}
+		
+		this.update=function (){
+			this.x+=this.velx;
+			this.y+=this.vely;
+			
+			//this.vely+=0.25;
+			
+			if(this.x<0)
+			{
+				this.x=0;
+				this.velx*=-1;
+			}
+			if(this.y<0)
+			{
+				this.y=0;
+				this.vely*=-1;
+			}
+			
+			if(this.x>w-this.width)
+			{
+				snd.play();
+				this.x=w-this.width;
+				this.velx*=-1;
+			}
+			
+			this.vely+=0.15;
+			if(this.y>h-this.height)
+			{
+	// buffers automatically when created
+
+//snd.play();
+this.y=h-this.height;
+				this.velx*=0.5;
+				this.vely*=0.5;
+				
+				this.vely*=-1;
+		
+			}
+		//snd.pause();	
+		}
+	}
+	
+	
+	var boxes=[];
+	var count=25;
+	//for(var i=0;i<count;i++)
+	//{
+		boxes.push(new box(Math.random()*20,Math.random()*20));
+//	}
+	
+	function draw()
+	{
+		
+		ctx.globalCompositeOperation = "source-over";
+		ctx.fillStyle="rgba(0,0,0,0.5)";
+		ctx.fillRect(0,0,w,h);
+ctx.globalCompositeOperation = "lighter";
+		
+		for(var i=0;i<boxes.length;i++)
+		{
+		boxes[i].draw();
+		}
+		
+		update()
+	}
+	
+	function update()
+	{
+		for(var i=0;i<boxes.length;i++)
+		{
+		boxes[i].update();
+		}
+	}
+setInterval(function (){
+	boxes.push(new box(Math.random()*40,Math.random()*40));
+},3000)
+	setInterval(draw,33);
+	}
+	</script>
+		
+		
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="jayeshkawli">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		
+		<canvas id="canvas">
+			
+			</canvas>
+	<div style="position:absolute; background-color: yellow">
+		asdsa</div>	
+		<div style="position:absolute;left:30px;z-index:-3; background-color: green">
+		asdsa</div>	
+		<div style="background-color: green">
+		</div>	
+	</body>
+</html>
